@@ -2,7 +2,7 @@ import torch
 import os
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-path="./trained_models/clean-2_record.pth"
+path="./trained_models/clean-2_record.pth" #需要转换成onnx模型的pth文件路径
 file_name=os.path.split(path)[1].split('.')[0]
 print(file_name)
 model = torch.load(path) # pytorch模型加载
