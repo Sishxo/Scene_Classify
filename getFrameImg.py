@@ -54,8 +54,8 @@ def getFrameInVideo(readPath, savePath, interval):
 
 if __name__ == "__main__":
     readPath = "/home/sishxo/project/scene/清洁卫生不合格"
-    if not os.path.exists(readPath):
-        os.makedirs(readPath)
+    '''if not os.path.exists(readPath):
+        os.makedirs(readPath)'''
     savePath = "/home/sishxo/project/scene/clear_no_image"
     if not os.path.exists(savePath):
         os.makedirs(savePath)
